@@ -1,10 +1,8 @@
 # dotfiles
----
 
 My nixOS &amp; Hyprland .files!
 
 # main projects I use
----
 Linux distributions: NixOS.
 WM/Compositor: Hyprland.
 Terminal Emulator: Alacritty.
