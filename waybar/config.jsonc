@@ -1,0 +1,59 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "spacing": 2,
+    "margin": 4,
+    // "width": 1280, // Waybar width
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["custom/music"],
+    "modules-right": ["pulseaudio", "clock", "custom/power"],
+        "hyprland/workspaces": {
+        "disable-scroll": true,
+         "sort-by-name": true,
+         "format": " {icon} ",
+         "format-icons": {
+                "default": "",
+        },
+         "persistent-workspaces": {
+                "*": 5,
+     },
+     },
+        "custom/music": {
+        "format": "  {}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "exec": "playerctl metadata --format='Now playing: {{ artist }} - {{ title }}'",
+        "on-click-middle": "playerctl play-pause",
+        "on-click-right": "playerctl previous",
+        "on-click": "playerctl next",
+        "max-length": 200
+    },
+    "clock": {
+        "timezone": "Asia/Jerusalem",
+        "format-alt": " {:%d/%m/%Y}",
+        "format": "󰥔 {:%H:%M}"
+    },
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "default": ["", "", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/lock": {
+        "tooltip": false,
+        "on-click": "hyprlock",
+        "format": "",
+    },
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "wlogout &",
+        "on-click-right": "hyprlock",
+        "format": "",
+    },
+}

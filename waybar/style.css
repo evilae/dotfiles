@@ -1,0 +1,71 @@
+@import '/home/evilae/.cache/wal/colors-waybar.css';
+
+@define-color bg @background;
+@define-color fg @foreground;
+@define-color textcolor @cursor;
+
+
+* {
+  font-family: CaskaydiaMono Nerd Font;
+  font-size: 17px; 
+}
+
+#waybar {
+  background: @color8;
+  margin: 0px 0px 0px 0px;
+  padding-top: 2rem;
+  padding-right: 1em;
+  padding-left: 1.5em;
+  padding-bottom: 0.5em;
+  border-radius: 1.7rem;
+}
+
+#workspaces {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @color8;
+  margin-left: 1rem;
+}
+
+#workspaces button {
+  color: @fg;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+#workspaces button.active {
+  color: @color11;
+  border-radius: 1rem;
+}
+
+#workspaces button:hover {
+    color: @cursor;
+    background-color: rgba(1, 1, 1, .0);
+    border-radius: 1.4rem;
+}
+
+.modules-right {
+  margin-right: 1rem;
+}
+
+#custom-music,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#custom-lock,
+#custom-power {
+  color: @fg;
+  padding: 0.5rem 1rem;
+  margin: 10px 0;
+}
+
+#pulseaudio {
+}
+
+#clock {
+}
+#custom-power {
+  margin-right: 5px;
+}
