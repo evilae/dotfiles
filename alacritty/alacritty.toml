@@ -1,0 +1,28 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+
+opacity = 0.95
+padding = { x = 22, y = 0 }
+
+[cursor]
+style = { shape = "Beam", blinking = "Off" }
+
+unfocused_hollow = false
+
+[font]
+
+normal = { family = "CaskaydiaMono Nerd Font", style = "Bold" }
+
+bold = { family = "CaskaydiaMono Nerd Font", style = "Bold" }
+
+italic = { family = "CaskaydiaMono Nerd Font", style = "Italic" }
+
+bold_italic = { family = "CaskaydiaMono Nerd Font", style = "Bold_Italic" }
+
+size = 22
+
+[mouse]
+
+hide_when_typing = true
